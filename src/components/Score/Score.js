@@ -1,21 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './Score.module.css';
 
-class Score extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      score: 0
-    }
-  }
-
-  render() {
-    const { score } = this.state;
-    
-    return (
-      <p className={styles.wrapper}>Score: {score}</p>
-    )
-  }
-}
+const Score = ({ score }) => (
+  <p className={styles.wrapper}>Score: {score}</p>
+)
 
 export default Score;
